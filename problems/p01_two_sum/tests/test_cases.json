@@ -1,0 +1,72 @@
+[
+  {
+    "name": "basic_case",
+    "description": "Basic test with positive numbers",
+    "nums": [2, 7, 11, 15],
+    "target": 9,
+    "expected": [0, 1]
+  },
+  {
+    "name": "middle_indices",
+    "description": "Target sum from middle elements",
+    "nums": [3, 2, 4],
+    "target": 6,
+    "expected": [1, 2]
+  },
+  {
+    "name": "duplicates",
+    "description": "Array with duplicate values",
+    "nums": [3, 3],
+    "target": 6,
+    "expected": [0, 1]
+  },
+  {
+    "name": "negative_numbers",
+    "description": "Array with negative numbers",
+    "nums": [-1, -2, -3, -4, -5],
+    "target": -8,
+    "expected": [2, 4]
+  },
+  {
+    "name": "zero_target",
+    "description": "Target is zero",
+    "nums": [-5, 0, 5, 10],
+    "target": 0,
+    "expected": [0, 2]
+  },
+  {
+    "name": "large_numbers",
+    "description": "Large positive and negative numbers",
+    "nums": [1000000000, -1000000000, 500000000],
+    "target": 0,
+    "expected": [0, 1]
+  },
+  {
+    "name": "minimum_size",
+    "description": "Minimum array size (2 elements)",
+    "nums": [1, 2],
+    "target": 3,
+    "expected": [0, 1]
+  },
+  {
+    "name": "last_elements",
+    "description": "Solution at end of array",
+    "nums": [1, 2, 3, 4, 5, 6],
+    "target": 11,
+    "expected": [4, 5]
+  },
+  {
+    "name": "mixed_signs",
+    "description": "Mix of positive and negative",
+    "nums": [-10, 5, 15, -5, 20],
+    "target": 10,
+    "expected": [0, 4]
+  },
+  {
+    "name": "larger_array",
+    "description": "Larger array to test efficiency",
+    "nums": [230, 863, 916, 585, 981, 404, 316, 785, 88, 12, 70, 435, 384, 778, 887, 755, 740, 337, 86, 92],
+    "target": 542,
+    "expected": [4, 17]
+  }
+]
