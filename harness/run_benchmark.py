@@ -3,6 +3,7 @@ LLM Coding Benchmark Suite - Main benchmark runner
 """
 
 import argparse
+import os
 import json
 from pathlib import Path
 from typing import List, Dict, Any
@@ -195,7 +196,7 @@ class BenchmarkRunner:
 def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(description="LLM Coding Benchmark Runner")
-    parser.add_argument("--model", required=True, help="LLM model name")
+    parser.add_argument("--model", default=os.getenv("OPENAI_MODEL", "gpt-5"), help="LLM model name")
     parser.add_argument("--problems", default="all", help="Comma-separated problem IDs or 'all'")
     parser.add_argument("--language", default="python", choices=["python", "javascript", "java", "cpp"])
     parser.add_argument("--output-dir", default="results", help="Output directory for results")
